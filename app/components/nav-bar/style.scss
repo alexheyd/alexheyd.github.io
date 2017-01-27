@@ -1,0 +1,39 @@
+& {
+  font-family: Verdana;
+  font-size: 11px;
+  background: #111;
+  border-bottom: 1px solid #555;
+  color: #fefefe;
+
+  ul, li {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-right: -4px;
+
+    &:after {
+      content: "::";
+      margin: 0;
+      padding: 0;
+    }
+
+    &:last-child:after {
+      content: ""
+    }
+  }
+
+  a {
+    display: inline-block;
+    color: #fefefe;
+    text-decoration: none;
+    padding: 9px;
+
+    &:hover {
+      background-color: #444;
+    }
+  }
+}
